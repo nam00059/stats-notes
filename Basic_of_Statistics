@@ -1,0 +1,100 @@
+# 📘 Week 1: Basics of Statistics
+
+This week's focus is on foundational statistical concepts, including types of data, key summary measures, and the role of distributional assumptions.
+
+---
+
+## 🔍 Types of Statistics
+
+- **Descriptive Statistics**:  
+  Use of graphs and numerical summaries to describe sample data.
+
+- **Inferential Statistics**:  
+  Techniques used to draw conclusions or make predictions about a population or process based on sample data.
+
+---
+
+## 📚 Key Terms
+
+## 🧾 Key Terms
+
+| Term           | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **Population** | The full group you're interested in studying                                |
+| **Process**    | Ongoing system generating data                                              |
+| **Census**     | Collecting data from the entire population                                  |
+| **Parameter**  | A fixed, often unknown, numerical characteristic of a population            |
+| **Sample**     | A subset of the population used for analysis                                |
+| **Measurement**| A single observed value                                                     |
+| **Statistic**  | A number computed from a sample (used to estimate parameters)               |
+
+
+---
+
+## 🧾 Types of Data
+
+The data type depends on how the variable is coded:
+
+| Type         | Summary Measures |
+|--------------|------------------|
+| **Nominal**  | Frequencies, Proportions, Mode |
+| **Ordinal**  | Median, Percentiles, Range, IQR |
+| **Interval** | Mean, Standard Deviation, Skewness |
+
+---
+
+## 📈 Normal Distribution (Empirical Rule)
+
+- Bell-shaped curve defined by **mean (μ)** and **standard deviation (σ)**
+- **Empirical Rule** (only for normal distributions):
+  - 68% of values lie within μ ± 1σ
+  - 95% within μ ± 2σ
+  - 99.7% within μ ± 3σ
+- **Standard Normal Distribution**:  
+  - Mean = 0, SD = 1  
+  - If a variable follows a normal distribution, the **z-score** follows a standard normal distribution  
+  - Mean = Median = Mode
+
+**Why does normality matter?**  
+Many statistical methods (e.g., t-test, regression) assume normality. Violations may require transformation (e.g., log) or robust alternatives.
+
+---
+
+## 📐 Chebyshev’s Theorem (For Any Distribution)
+
+Gives the minimum proportion of observations within `k` standard deviations from the mean:
+
+- At least `1 - (1/k²)` of values lie within `k` standard deviations
+  - k = 2 → ≥ 75%
+  - k = 3 → ≥ 88.9%
+
+Useful when the shape of the distribution is unknown.
+
+---
+
+## 🧮 Z-Score
+
+Formula:  
+`Z = (X - X̄) / s`
+
+- Measures how many standard deviations a value is from the sample mean
+- Interpretable even without knowing the original units
+- For **normal distributions**, Z-scores allow probability lookups via the Z-table
+- For **non-normal distributions**, Z-score is still valid for standardization, but probability interpretation may not hold
+
+**Benefits**:
+1. Unitless and comparable across scales  
+2. Easily interpretable
+
+---
+
+## ⚖️ Proportion vs Likelihood
+
+| Concept     | Meaning |
+|-------------|---------|
+| **Proportion** | Directly knowable from data (e.g., "It rained on 10 days in October") |
+| **Likelihood** | An inference about an unknown process, based on known proportions (e.g., "Likelihood of rain on Oct 4th") |
+
+---
+
+📝 _More coming soon in Week 2: Probability Foundations_.
